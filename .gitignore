@@ -1,0 +1,50 @@
+# LaTeX / build logs
+*.log
+
+# Scraped JD drafts (timestamped)
+scraped_*.txt
+
+# Playwright CLI session artifacts
+.playwright-cli/
+.playwright-mcp/
+
+# Local Playwright skill copy (provided outside this repository)
+/.agents/skills/playwright-cli/
+
+# Local rendering and browser QA artifacts
+/tmp/
+
+# Node.js dependencies and lockfile
+node_modules/
+package-lock.json
+
+# Common LaTeX auxiliaries (root and elsewhere)
+*.aux
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)
+
+# Job application packages (yyyy-mm-dd_company-role/) — local only
+[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]_*/
+
+# Root resume outputs are local by default in the public template.
+resume.pdf
+resume.docx
+
+# Python
+__pycache__/
+*.py[cod]
+.Python
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*~

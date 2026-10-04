@@ -1,0 +1,22 @@
+{
+  "name": "automatic-resume-template",
+  "version": "1.0.0",
+  "description": "Agent-friendly resume tailoring workspace with LaTeX, PDF/DOCX builds, and public-safe sample data.",
+  "homepage": "https://github.com/mhmdnsr-dev/automatic-resume-template#readme",
+  "bugs": {
+    "url": "https://github.com/mhmdnsr-dev/automatic-resume-template/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhmdnsr-dev/automatic-resume-template.git"
+  },
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "browser": "node scripts/agent-browser.mjs",
+    "test": "node --test test/agent-browser.test.mjs test/agent-browser.integration.test.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.62.1"
+  }
+}

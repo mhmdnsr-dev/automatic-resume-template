@@ -1,0 +1,14 @@
+---
+description: Mostaql apply-loop — follow portable AGENTS.md / freelance-apply-loop
+alwaysApply: false
+---
+
+# Mostaql apply loop
+
+When the user asks to find/apply on Mostaql (مستقل) or runs the apply loop:
+
+1. Read [`AGENTS.md`](../../AGENTS.md)
+2. Read [`.agents/skills/candidate-source.md`](../../.agents/skills/candidate-source.md) and the current `resume.tex`
+3. Load and follow [`.agents/skills/freelance-apply-loop/SKILL.md`](../../.agents/skills/freelance-apply-loop/SKILL.md) with platform Mostaql
+4. Never submit without explicit OK for that project
+5. Candidate facts only from the current master `.tex`; proposals default to Arabic

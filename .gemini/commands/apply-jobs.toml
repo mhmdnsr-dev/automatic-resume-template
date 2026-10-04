@@ -1,0 +1,11 @@
+description = "Run the gated employment-site apply loop."
+prompt = """
+Use the canonical skill at .agents/skills/job-apply-loop/SKILL.md.
+
+Read .agents/skills/candidate-source.md and the current resume.tex first.
+Use the dedicated browser workflow from .agents/skills/browser-session/SKILL.md.
+Ask "Apply now?" before every submission, and after one successful submission ask whether to continue on the same site or move to another.
+
+User arguments:
+{{args}}
+"""

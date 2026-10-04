@@ -1,0 +1,11 @@
+---
+description: Run the gated Mostaql freelance apply loop with Arabic proposals
+---
+
+Use the canonical skill at `.agents/skills/freelance-apply-loop/SKILL.md` with platform Mostaql.
+
+Read `.agents/skills/candidate-source.md` and the current `resume.tex` first.
+Use the dedicated browser workflow from `.agents/skills/browser-session/SKILL.md`.
+Mostaql proposals default to Arabic. Ask `Apply now?` before every proposal submission.
+
+User arguments: $ARGUMENTS

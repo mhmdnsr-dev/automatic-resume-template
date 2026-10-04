@@ -1,0 +1,16 @@
+---
+description: Dedicated persistent browser safety contract for all interactive browser tasks
+alwaysApply: true
+---
+
+# Browser safety
+
+For every interactive or authenticated browser task:
+
+1. Read [`AGENTS.md`](../../AGENTS.md).
+2. Load [`.agents/skills/browser-session/SKILL.md`](../../.agents/skills/browser-session/SKILL.md).
+3. Use only `npm run browser -- ...` with the explicitly configured dedicated profile.
+4. Never open or attach to an integrated, system-default, or personal-profile browser unless the user explicitly requests that exception for the current task.
+5. Pause for user takeover on login, 2FA, CAPTCHA, or password prompts.
+6. End without closing the browser, tabs, or profile.
+

@@ -1,0 +1,14 @@
+---
+description: Dedicated-browser handoff and writing-voice setup for apply loops
+alwaysApply: false
+---
+
+# Website apply loop (shared)
+
+When starting Upwork, Mostaql, or employment-site apply loops, or when the user requests browser automation for an application:
+
+1. Read [`AGENTS.md`](../../AGENTS.md)
+2. Read [`.agents/skills/candidate-source.md`](../../.agents/skills/candidate-source.md) and the current `resume.tex`
+3. Load and follow [`.agents/skills/website-apply-loop/SKILL.md`](../../.agents/skills/website-apply-loop/SKILL.md)
+4. Follow [`.agents/skills/browser-session/SKILL.md`](../../.agents/skills/browser-session/SKILL.md); never bypass its dedicated-profile helper.
+5. Candidate facts come only from the current master `.tex`.

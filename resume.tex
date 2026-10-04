@@ -1,0 +1,187 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[default]{sourcesanspro}
+\usepackage[english]{babel}
+\usepackage[letterpaper,margin=0.58in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{microtype}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\input{glyphtounicode}
+
+\pagestyle{empty}
+\raggedright
+\frenchspacing
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\tabcolsep}{0pt}
+\urlstyle{same}
+\pdfgentounicode=1
+
+% Central spacing rhythm. Negative values compensate only for TeX box depth.
+\newlength{\cvSectionRuleGap}
+\newlength{\cvSectionBefore}
+\newlength{\cvSectionAfter}
+\newlength{\cvEmployerToRoleAdjust}
+\newlength{\cvRoleGap}
+\newlength{\cvEmployerGap}
+\newlength{\cvProjectGap}
+\newlength{\cvEducationGap}
+\newlength{\cvEducationToSectionAdjust}
+\newlength{\cvHeaderNameGap}
+\newlength{\cvHeaderContactGap}
+\newlength{\cvHeaderToSectionAdjust}
+
+\setlength{\cvSectionRuleGap}{1pt}
+\setlength{\cvSectionBefore}{5pt}
+\setlength{\cvSectionAfter}{2pt}
+\setlength{\cvEmployerToRoleAdjust}{1.3pt}
+\setlength{\cvRoleGap}{2pt}
+\setlength{\cvEmployerGap}{4pt}
+\setlength{\cvProjectGap}{2pt}
+\setlength{\cvEducationGap}{1.1pt}
+\setlength{\cvEducationToSectionAdjust}{0pt}
+\setlength{\cvHeaderNameGap}{2pt}
+\setlength{\cvHeaderContactGap}{1pt}
+\setlength{\cvHeaderToSectionAdjust}{-5pt}
+
+\titleformat{\section}
+  {\fontsize{12}{14}\selectfont\bfseries}
+  {}{0pt}{}
+  [\vspace{\cvSectionRuleGap}\titlerule]
+\titlespacing*{\section}{0pt}{\cvSectionBefore}{\cvSectionAfter}
+
+\hypersetup{
+  pdflang      = {en-US},
+  pdftitle    = {Example Candidate - Frontend Developer},
+  pdfauthor   = {Example Candidate},
+  pdfsubject  = {Frontend Developer Resume - React and Angular},
+  pdfkeywords = {Frontend Developer, React, Angular, Next.js, TypeScript,
+                 JavaScript, Playwright, REST APIs, PWA, SSR, JSP, MVC,
+                 Node.js, WebSockets, Azure DevOps, Agile,
+                 AI-Assisted Engineering}
+}
+
+\newcommand{\resumeEmployerHeading}[4]{%
+  \noindent
+  \begin{tabularx}{\textwidth}{@{}Xr@{}}
+    \textbf{#1} & \textbf{#2} \\
+    \textit{#3} & \textit{#4} \\
+  \end{tabularx}\par
+}
+
+\newcommand{\resumeRole}[2]{%
+  \noindent
+  \begin{tabularx}{\textwidth}{@{}Xr@{}}
+    \textbf{\textit{#1}} & \textit{#2} \\
+  \end{tabularx}\par
+}
+
+\newcommand{\resumeProjectHeading}[2]{%
+  \noindent
+  \begin{tabularx}{\textwidth}{@{}Xr@{}}
+    #1 & \textbf{#2} \\
+  \end{tabularx}\par
+}
+
+\newcommand{\resumeEducationHeading}[4]{%
+  \noindent
+  \begin{tabularx}{\textwidth}{@{}Xr@{}}
+    \textbf{#1} & \textbf{#2} \\
+    \textit{#3} & \textit{#4} \\
+  \end{tabularx}\par
+}
+
+\newcommand{\resumeItem}[1]{\item #1}
+\newcommand{\resumeItemListStart}{%
+  \begin{itemize}[
+    leftmargin=1.15em,
+    label=\textbullet,
+    labelsep=0.45em,
+    itemsep=1pt,
+    parsep=0pt,
+    partopsep=0pt,
+    topsep=1pt
+  ]
+}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+\begin{document}
+
+\begin{center}
+  {\fontsize{24}{26}\selectfont\bfseries Example Candidate} \\[\cvHeaderNameGap]
+  Remote City \enspace|\enspace
+  \href{tel:+10000000000}{+10000000000} \enspace|\enspace
+  \href{mailto:candidate@example.com}{candidate@example.com} \\[\cvHeaderContactGap]
+  \href{https://linkedin.com/in/example-candidate}{linkedin.com/in/example-candidate} \enspace|\enspace
+  \href{https://github.com/example-candidate}{github.com/example-candidate} \enspace|\enspace
+  \href{https://candidate.dev}{candidate.dev}
+\end{center}
+\vspace{\cvHeaderToSectionAdjust}
+
+\section{Professional Summary}
+Frontend Developer with \textbf{2.5+ years of production experience} modernizing B2B aviation search, pricing, and booking workflows. Current work centers on \textbf{Angular 14+ SPA migration} and REST/JSON integrations; paid freelance work includes \textbf{React/Next.js and TypeScript} with SSR. Applies professional \textbf{AI-assisted engineering} with Playwright smoke validation.
+
+\section{Experience}
+\resumeEmployerHeading
+  {Example Travel Platform}{Jun 2024 - Present}
+  {Frontend Developer}{Hybrid (Remote City / Remote)}
+\vspace{\cvEmployerToRoleAdjust}
+\resumeRole{Mid-Level Frontend Developer}{Feb 2026 - Present}
+\resumeItemListStart
+  \resumeItem{Contributed substantially to migrating \textbf{5+ modules}, with direct implementation work on the large booking module, from a tens-of-thousands-line \textbf{JSP/MVC} application with page reloads and forced navigation to \textbf{Angular 14+ SPA} workflows backed by REST/JSON contracts.}
+  \resumeItem{Implement supplier-specific booking and pricing behavior within a cross-functional team across approximately \textbf{15 GDS and LCC suppliers}, including \textbf{Amadeus, Galileo, and Sabre}.}
+  \resumeItem{Delivered an interactive workflow consolidating work from several pages and tabs into one interface.}
+  \resumeItem{Built a CLI toolchain for local build/run, zero-copy exploded-WAR deployment, instant resource sync, and roughly five-second incremental Java redeploys, eliminating the need to launch the application through IntelliJ.}
+  \resumeItem{Use AI-assisted workflows daily, including local \textbf{Playwright} smoke checks before pushes to validate frontend behavior.}
+\resumeItemListEnd
+\vspace{\cvRoleGap}
+\resumeRole{Junior Frontend Developer}{Jun 2024 - Feb 2026}
+\resumeItemListStart
+  \resumeItem{Contributed to \textbf{\href{https://example-booking.com}{example-booking.com}}, a B2B NDC flight booking platform processing roughly \textbf{6,000 bookings} and \textbf{100K--200K search queries daily} across GDS and LCC suppliers; optimized high-traffic screens for responsiveness under load.}
+  \resumeItem{Partnered with backend, QA, and product in \textbf{Agile/Scrum} sprints to ship supplier features and maintain frontend quality.}
+\resumeItemListEnd
+\vspace{\cvEmployerGap}
+\resumeEmployerHeading
+  {Freelance Frontend Developer}{Nov 2023 - Jun 2024}
+  {React/Next.js \& TypeScript Projects}{Remote}
+\resumeItemListStart
+  \resumeItem{Migrated \href{https://example-games.com/ar}{example-games.com} from legacy Node.js/EJS to a modular \textbf{Next.js/TypeScript} architecture, unifying numerous third-party APIs behind one interface.}
+  \resumeItem{Rebuilt SEO and rendering for a \textbf{Next.js/TypeScript e-commerce platform} (\href{https://www.example-shop.com/ar/login}{example-shop.com}) with SSR, dynamic sitemaps, and OpenGraph metadata, and worked on Core Web Vitals optimization for LCP and CLS.}
+  \resumeItem{Built a multi-step \textbf{React/TypeScript AI article-authoring workflow} (\href{https://example-writer.app/home}{example-writer.app}) with user choices, interactions, transitions, and contracts with a Python/Django backend.}
+\resumeItemListEnd
+
+\section{Personal Projects}
+\resumeProjectHeading
+  {\textbf{ADO Work Companion} \textbar{} \textit{Next.js, React, TypeScript, Tailwind CSS}}{Jul 2026}
+\resumeItemListStart
+  \resumeItem{Azure DevOps companion for work-item status and hours, comments, and attachments through a proxied REST API with HttpOnly encrypted PAT cookies; installable \textbf{PWA}. \textbf{Links:} \href{https://github.com/example-candidate/azure-devOps-work-item-management}{GitHub} / \href{https://azure-dev-ops-work-item-management.vercel.app/dashboard}{Live}}
+\resumeItemListEnd
+\vspace{\cvProjectGap}
+\resumeProjectHeading
+  {\textbf{Event Booking Platform} \textbar{} \textit{React, Angular, Node.js, Socket.IO}}{Nov 2023}
+\resumeItemListStart
+  \resumeItem{Full-stack event booking platform with \textbf{JWT authentication}, real-time WebSocket notifications, and a React admin dashboard. \textbf{Links:} \href{https://github.com/example-org/event-booking-platform/}{GitHub} / \href{https://example-events.app/}{Live}}
+\resumeItemListEnd
+
+\section{Education}
+\resumeEducationHeading
+  {Example Training Program}{Jun 2023 - Nov 2023}
+  {Intensive Code Camp -- Full Stack MEARN (MongoDB, Express, Angular, React, Node.js)}{}
+\vspace{\cvEducationGap}
+\resumeEducationHeading
+  {Example University}{Oct 2015 - Jun 2020}
+  {B.Sc. in Biology}{}
+\vspace{\cvEducationToSectionAdjust}
+\section{Technical Skills}
+\textbf{Languages:} TypeScript, JavaScript (ES6+), HTML5, CSS3, SCSS/SASS, JSP. \\
+\textbf{Frontend:} React, Next.js, Angular, AngularJS, RxJS, Redux, jQuery, Tailwind CSS, PWAs, SSR/SSG, NW.js. \\
+\textbf{Backend / APIs:} Node.js, Express, REST APIs, third-party API integration, WebSockets, MongoDB, MySQL, Redis, JWT. \\
+\textbf{Testing \& Quality:} Playwright, cross-browser testing, Core Web Vitals. \\
+\textbf{AI-Assisted Engineering:} Daily development and local Playwright smoke validation with Codex, Claude, and OpenCode. \\
+\textbf{Tools \& Workflow:} Git/GitHub, Azure DevOps, Agile/Scrum, Linux, Maven, WildFly, Flyway, Google Apps Script, shell scripting.
+
+\end{document}

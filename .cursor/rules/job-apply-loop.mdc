@@ -1,0 +1,13 @@
+﻿---
+description: Job apply-loop — LinkedIn, Indeed Egypt, Wuzzuf, and MENA sites
+alwaysApply: false
+---
+
+# Employment-site apply loop
+
+1. Read [`AGENTS.md`](../../AGENTS.md).
+2. Read [`.agents/skills/candidate-source.md`](../../.agents/skills/candidate-source.md) and the current `resume.tex`.
+3. Follow [`.agents/skills/job-apply-loop/SKILL.md`](../../.agents/skills/job-apply-loop/SKILL.md).
+4. Login page: pause for user takeover in the dedicated browser; if unresolved, block that site and rotate without closing tabs.
+5. Never submit without explicit OK for that job.
+6. After one successful submission, ask whether to continue on the same site or move to another.
